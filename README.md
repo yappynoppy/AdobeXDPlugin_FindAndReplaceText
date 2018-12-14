@@ -1,3 +1,5 @@
-# XDプラグインキット（Vue + Babel版）
+# Adobe XD plugin（Vue + Babel）
 
-テキスト置換
+テキスト置換できるプラグインです。
+
+Adobe XD plugin to find and replace text.
