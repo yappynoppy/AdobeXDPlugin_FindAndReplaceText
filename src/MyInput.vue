@@ -1,7 +1,8 @@
 <template>
-    <label>{{ label }}
-    <input ref="textField" type="text" size="30" maxlength="20">
-    </label>
+    <div>
+    <p>{{ label }}</p>
+    <input ref="textField" type="text" uxp-quiet="true">
+    </div>
 </template>
 <script>
     export default {

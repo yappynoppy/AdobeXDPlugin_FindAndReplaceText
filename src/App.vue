@@ -6,17 +6,16 @@
             <MyInput ref="after" label="置換後のテキスト"></MyInput>
 
             <p class="attention">※実行をクリックするとアートボード直下のテキストのみが置換されます。</p>
-            <footer>
-                <button uxp-variant="cta" @click="onClickExecution">実行</button>
-                <button type="submit" @click="onCancelHandler">キャンセル</button>
-            </footer>
+            <MyFooter @onClickCancel="onCancelHandler" @onClickExecution="onClickExecution"></MyFooter>
         </form>
     </div>
 </template>
 <script>
+    import MyFooter from './MyFooter.vue';
     import MyInput from './MyInput.vue';
     export default {
         components: {
+            MyFooter,
             MyInput,
         },
         props: {
